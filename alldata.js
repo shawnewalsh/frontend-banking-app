@@ -10,9 +10,8 @@ function AllData(){
 
   return (
     <Card 
-    style={{maxWidth: "18rem"}}
     bgcolor="secondary"
-    header="User Table Data"
+    header="top secret... shhhh..."
     title = "User Data"
     
     body = { ctx.users ?  (
