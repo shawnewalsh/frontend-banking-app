@@ -1,0 +1,28 @@
+	AS A USER....
+Homepage & Navigation Bar	When I visit the home page, I should see a navigation bar, and a card with a page title, description, and picture
+	The navigation bar should include working links to "create account", "withdraw", "deposit", and "all data" pages
+	The navigation bar should have a changing color hover effect over each of the separate links 
+	The navigation bar should highlight the element of the current page I am on
+	
+Create Account	When I visit  the create account page, I should see a form with a name, email, and password input field, and a "submit" button
+	Upon pushing "submit" I should receive a message that says "success".
+	Upon pushing "submit", I should see an "add another account" button
+	The form should contain name, email, and password validation
+	The "submit" button should be disabled if I do not complete the form
+	
+Withdraw	When I visit the withdraw page, I should see a styled card with balance information, a form field, and a withdraw button
+	When I type in the withdrawal amount and click "withdraw", I should see an updated account balance reflective of the transaction
+	When I type in the withdrawal amount and click "withdraw", I should see a success message 
+	If I type in a number higher than my account balance and click "withdraw", I should see a "transaction failed" message
+	If I don't type anything into the input box, the "withdraw" button is disabled 
+	If I type something that is not a number into the input box, I receive an alert that prompts me to enter numerical values only
+	
+Deposit	When I visit the deposit page, I should see a styled card with balance information, a form field, and a deposit button
+	When I type in the deposit amount and click "Withdraw", I should see an updated account balance reflective of the transaction
+	When I type in the deposit amount and click "Withdraw", I should see a success message
+	If I type something that is not a number into the input box, I receive an alert that prompts me to enter numerical values only
+	If I type a negative number into the input box and click "Withdraw", I recieve an an alert that prompts me to enter positive numbers only
+	If I do not type anything into the deposit box, the "Withdraw" button is disabled
+	
+All Data	When I visit the alldata page, I should see a display of the names, emails, and passwords of all of the users in JSON format
+	Extra - The data is styled on a bootstrap table card, with table headers of "name" "email" and "password"
