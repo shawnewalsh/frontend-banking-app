@@ -33,6 +33,7 @@ function Deposit(){
     setBalance(ctx.balance);
     document.getElementById('balance').innerHTML = balance;    
     console.log(`balance is now ${ctx.balance}`);
+    setStatus('Success');
   
   }
 
@@ -46,12 +47,14 @@ function Deposit(){
       status={status}
       body={ctx.loggedin ? (  
         <>
+                Current Balance<br/>
+        <input type="text" id="balance" name="balance" value={balance} readOnly></input><br/>
+        
         Amount<br/>
         <input type="input" className="form-control" id="deposit" placeholder="Enter your deposit amount" value={deposit} onChange={e => setDeposit(e.currentTarget.value)} /><br/>
         <button type="submit" className="btn btn-dark" onClick={handleDeposit} disabled={!deposit}  >Confirm Deposit</button>
         <br/><br/>
-        Current Balance<br/>
-        <input type="text" id="balance" name="balance" value={balance} readOnly></input><br/>
+
         
         </>
       ):(

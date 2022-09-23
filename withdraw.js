@@ -34,6 +34,7 @@ function Withdraw(){
     setBalance(ctx.balance);
     document.getElementById('balance').innerHTML = balance;    
     console.log(`balance is now ${ctx.balance}`);
+    setStatus('Success');
   }
 
   return (
@@ -43,13 +44,14 @@ function Withdraw(){
     status={status}
     body={ctx.loggedin ? (  
       <>
+            Current Balance<br/>
+      <input type="text" id="balance" name="balance" value={balance} readOnly></input><br/>
       Amount<br/>
       <input type="input" className="form-control" id="withdraw" placeholder="Enter your withdrawal amount" value={withdrawal} 
         onChange={e => setWithdrawal(e.currentTarget.value)} /><br/>
       <button type="submit" className="btn btn-light" onClick={handleWithdrawal} disabled={!withdrawal} >Confirm withdrawal</button>
       <br/><br/>
-      Current Balance<br/>
-      <input type="text" id="balance" name="balance" value={balance} readOnly></input><br/>
+
       
       </>
     ):(

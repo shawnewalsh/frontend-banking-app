@@ -1,0 +1,18 @@
+a:hover { 
+    color: rgb(246, 12, 12) !important; 
+}
+
+a:active {
+    color: rgb(12, 20, 253) !important;
+    background-color: pink;
+    font-size: large;
+}
+
+navbar-nav > .active > a { 
+    background-color: pink ; 
+}
+
+
+img {
+    border-radius: 10%;
+}
