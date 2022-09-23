@@ -7,7 +7,7 @@ a:active {
     background-color: pink;
     font-size: large;
 }
-
+ 
 navbar-nav > .active > a { 
     background-color: pink ; 
 }
