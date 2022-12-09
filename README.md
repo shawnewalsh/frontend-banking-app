@@ -7,7 +7,7 @@ Clone the repository
 npm install 
 node index.js
 
-Screenshots: 
+Screenshots: https://github.com/shawnewalsh/frontend-banking-app/blob/main/piggy%20bank%20demo.mp4
 
 Technology used: 
     cors:     2.8.5
